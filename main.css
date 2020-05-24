@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   outline: none;
+  font-family: 'Roboto', sans-serif;
 }
 body,html{
   width: 100%;
@@ -13,4 +14,17 @@ body {
 
 a{
   text-decoration: none;
+}
+
+.logo__content{
+  text-align: left;
+  
+}
+
+nav{
+
+}
+
+header{
+  display: flex;
 }
