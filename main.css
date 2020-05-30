@@ -1,8 +1,9 @@
-*{
+*,*:before,*:after{
   margin: 0px;
   padding: 0px;
   outline: none;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 h1{
   font-family: 'Ubuntu', sans-serif;
@@ -19,15 +20,23 @@ a{
   text-decoration: none;
 }
 
+header{
+  display: flex;
+}
+
+
 .logo__content{
-  text-align: left;
+
+}
+
+nav a{
   
 }
 
-nav{
-
+.header__user a{
+  
 }
 
-header{
-  display: flex;
+.nav__link{
+  
 }
