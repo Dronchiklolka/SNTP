@@ -11,19 +11,29 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="logo__content">
-            <a href="#" class="logo">SNTP</a>
-            </div>
-            <nav>
-                <a href="#" class="nav__link" onclick="SlowScroll('#main')">Главная</a>
-                <a href="pages/courses.html" class="nav__link">Курсы</a>
-                <a href="pages/about_us.html" class="nav__link">О нас</a>
-                <a href="pages/articles.html" class="nav__link">Статьи</a>
-                <a href="pages/help.html" class="nav__link">Помощь</a>
+            <div class="header__section">
+                <div class="logo__content">
+                    <a href="#" class="logo">SNTP</a>
+                </div>
+            <nav class="header__item">
+                <a href="#" class="nav__link__first" onclick="SlowScroll('#main')">Главная</a>
             </nav>
-            <div class="header__user">
-                <a href="#" class="">Войти</a>
-                <a href="#" class="">Зарегестрироваться</a>
+            <nav class="header__item">  <a href="pages/courses.html" class="nav__link">Курсы</a>
+            </nav>
+            <nav class="header__item"> <a href="pages/about_us.html" class="nav__link">О нас</a>
+            </nav>
+            <nav class="header__item">  <a href="pages/articles.html" class="nav__link">Статьи</a>
+                </nav>
+            <nav class="header__item"> <a href="pages/help.html" class="nav__link">Помощь</a>
+                </nav>
+        </div>
+            <div class="header__section">
+                <div class="header__item">
+                <a href="#" class="open">Войти</a>
+            </div>
+            <div class="header__item">
+                <a href="#" class="link__registration">Зарегестрироваться</a>
+            </div>
             </div>
         </header>
         <main>

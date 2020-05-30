@@ -22,21 +22,45 @@ a{
 
 header{
   display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+
 }
 
+.header__section{
+  display: flex;
+  align-items: center;
+}
 
-.logo__content{
+.header__item{
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-left: 5px;
+}
 
+.nav__link__first{
+  margin-left: 50px;
+}
+
+.header__item a{
+  color: black;
+  padding-left: 10px;
+}
+
+.logo__content a{
+  color: black;
+  font-size: 50px;
 }
 
 nav a{
-  
+ color: black;
 }
 
-.header__user a{
-  
+.header__section .header__item .open{
+  color:#4F8FC0;
 }
 
-.nav__link{
-  
+.header__section .header__item .link__registration{
+  color: #4F8FC0;
 }
