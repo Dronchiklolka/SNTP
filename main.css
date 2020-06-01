@@ -178,7 +178,8 @@ nav a {
 
 
 .section {
-  padding: 100px 80px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   background: #fff;
 }
 
@@ -190,7 +191,7 @@ nav a {
 .courses {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 60px;
 }
 
 .course__image {
@@ -212,14 +213,12 @@ nav a {
 
 
 /* feedback  */
-.feedback__newbie{
-  
-}
+
 
 .feedback{
   font-size: 40px;
   text-align: left;
-  padding: 0px 12px 49px 132px;
+  padding: 0px 12px 49px 0px;
 }
 
 .feedback__center{
