@@ -23,7 +23,7 @@ a {
 /* добавь шиирну 100% чтобы джс норм отображался */
 
 img {
-  ;
+  width: 100%;
 }
 
 .container {
@@ -215,12 +215,15 @@ nav a {
 }
 
 .feedback{
+  font-size: 40px;
   text-align: left;
-  padding: 0px 12px 49px 58px;
+  padding: 0px 12px 49px 132px;
 }
 
 .feedback__center{
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .feedback__content{
   width: 600px;
@@ -233,13 +236,24 @@ nav a {
 
 
 .feedback__head{
+  width: 188px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.feedback__head p{
+  font-weight: 500;
+}
+
+.feedback__head img{
+  width: 50px;
 }
 
 .feddback__text{
-
+  padding: 20px 0px 20px 0px;
 }
 
-.feedback__exit{
-
+.feedback__exit h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
