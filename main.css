@@ -304,10 +304,13 @@ footer{
 }
 .footer__content h1{
   font-size: 60px;
+  padding-bottom: 10px;
 }
 
 .footer__content a{
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .foorm{
