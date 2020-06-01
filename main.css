@@ -19,11 +19,12 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 /* добавь шиирну 100% чтобы джс норм отображался */
 
 img {
-  width: 100%;
+ width:100%;
 }
 
 .container {
@@ -256,4 +257,34 @@ nav a {
 .feedback__exit h2{
   padding-top: 10px;
   padding-bottom: 10px;
+}
+/* contacts */
+.contacts__conteiner{
+  height: 500px;
+}
+
+.contacts__items{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contacts__head{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contacts{
+
+}
+
+.contacts__content{
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #000;
 }
