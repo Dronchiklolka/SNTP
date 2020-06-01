@@ -22,7 +22,7 @@ a {
 }
 
 img {
-  width: 100%;
+  ;
 }
 
 .container {
@@ -210,5 +210,17 @@ nav a {
 
 /* feedback  */
 .feedback__newbie{
+  
+}
+
+.feedback{
+
+}
+
+.feedback__content{
+
+}
+
+.feedback__head{
   
 }
