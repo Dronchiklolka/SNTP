@@ -1,0 +1,150 @@
+*,*:before,*:after{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+  }
+  h1{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  body {
+    background-color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  img {
+   width:100%;
+  }
+  
+  b{
+    color: #ff0000;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .button {
+    background-color: #ff0000;
+    text-align: center;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .bg-blue {
+    background: #45C7FF;
+  }
+  
+  .color-red{
+    color:#ff0000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .header__section{
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__item{
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  
+  .nav__link__first{
+    margin-left: 50px;
+  }
+  
+  .header__item a {
+    color: black;
+    padding-left: 10px;
+  }
+  
+  .logo__content a {
+    color: black;
+    font-size: 50px;
+  }
+  
+  nav a {
+   color: black;
+  }
+  
+  footer{
+    background-color:#291B1B;
+    color: white;
+  }
+  
+  .header__section .header__item .open{
+    color:#4F8FC0;
+  }
+  
+  .header__section .header__item .link__registration{
+    color: #4F8FC0;
+  }
+
+  .background{
+      height:100%;
+      background-size: cover;
+      background-image: url(/images/smartphone-1184883_1920.png);
+  }
+
+  .article__header{
+    text-align: left;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .article__content{
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 25px;
+      margin-top: 30px;
+  }
+
+  .article__container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .article__list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 20px;
+}
+  
+
+  .article{
+
+  }
+
+ .three__articles{
+
+ }
+
+ .personaldev__container{
+
+ }
