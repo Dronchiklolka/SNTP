@@ -166,7 +166,6 @@ footer{
 
 .main-screen__items__items{
   width: 300px;
-
 }
 
 .main-screen__footer {
@@ -191,6 +190,8 @@ footer{
 .section__title {
   margin-bottom: 50px;
   font-size: 36px;
+  font-weight: 700;
+  display: inline-block;
 }
 
 .courses {
