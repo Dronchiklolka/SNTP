@@ -275,10 +275,6 @@ nav a {
   font-size: 20px;
 }
 
-.contacts{
-
-}
-
 .contacts__content{
   display: flex;
   justify-content: center;
@@ -287,4 +283,27 @@ nav a {
   margin-bottom: 20px;
   font-size: 18px;
   color: #000;
+}
+
+/* footer */
+
+.footer__content{
+
+}
+
+.foorm{
+
+}
+
+.foorm__button{
+  
+}
+
+.footer__subscribe{
+
+
+}
+
+.mail__footer{
+
 }
