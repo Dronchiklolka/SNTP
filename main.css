@@ -27,6 +27,9 @@ img {
  width:100%;
 }
 
+b{
+  color: #ff0000;
+}
 
 .container {
   width: 100%;
@@ -36,7 +39,7 @@ img {
 }
 
 .button {
-  background-color: red;
+  background-color: #ff0000;
   text-align: center;
   color: white;
   padding: 15px 15px;
@@ -50,7 +53,7 @@ img {
 }
 
 .color-red{
-  color: red;
+  color:#ff0000;
 }
 
 header {
@@ -90,6 +93,10 @@ nav a {
  color: black;
 }
 
+footer{
+  background-color:#291B1B;
+  color: white;
+}
 .header__section .header__item .open{
   color:#4F8FC0;
 }
@@ -137,7 +144,7 @@ nav a {
   font-size: 120px;
   padding-bottom: 25px;
   letter-spacing: 20px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #ff0000;
   width: 400px;
 }
 
@@ -217,7 +224,6 @@ nav a {
 
 .feedback{
   font-size: 40px;
-  text-align: left;
   padding: 0px 12px 49px 0px;
 }
 
@@ -286,9 +292,22 @@ nav a {
 }
 
 /* footer */
+.footer__items{
+  display: flex;
+}
 
 .footer__content{
+  margin: 10px 65px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.footer__content h1{
+  font-size: 60px;
+}
 
+.footer__content a{
+  color: #fff;
 }
 
 .foorm{
