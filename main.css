@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
 }
+/* добавь шиирну 100% чтобы джс норм отображался */
 
 img {
   ;
@@ -214,13 +215,31 @@ nav a {
 }
 
 .feedback{
-
+  text-align: left;
+  padding: 0px 12px 49px 58px;
 }
 
+.feedback__center{
+  text-align: center;
+}
 .feedback__content{
-
+  width: 600px;
 }
+
+.feedback__container{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .feedback__head{
-  
+
+}
+
+.feddback__text{
+
+}
+
+.feedback__exit{
+
 }
