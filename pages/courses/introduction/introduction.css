@@ -112,6 +112,31 @@ footer{
   height: 500px;
 }
 
+.cours__content{
+  display: flex;
+}
+
+.cours__left{
+  width: 20%;
+  margin-top: 250px;
+}
+
+.cours__right{
+  width: 80%;
+}
+
+.lessons__list{
+
+}
+
+.name__cours{
+
+}
+
+.leson__description{
+
+}
+
 
 .footer__items{
   display: flex;
