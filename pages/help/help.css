@@ -23,7 +23,9 @@
   }
   
   img {
-   width:100%;
+   width:90%;
+   padding-top: 5px;
+   padding-bottom: 5px;
   }
   
   b{
@@ -91,10 +93,25 @@
    color: black;
   }
 
+.help__header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1300px;
+    grid-gap: 60px;
+    text-align: center;
+}
 
+.help__items{
+    width: 200px;
+    font-size: 20px;
+}
 
+.help__zagalovok{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
 
-  
   
   footer{
     background-color:#291B1B;
