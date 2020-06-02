@@ -105,6 +105,14 @@ footer{
 }
 
 
+.bakground__curs{
+  background-image: url(/images/bfd663ec8fcd825c9200ee5a3d6496b3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+
 .footer__items{
   display: flex;
 }
