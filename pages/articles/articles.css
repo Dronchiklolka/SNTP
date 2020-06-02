@@ -7,6 +7,15 @@
   }
   h1{
     font-family: 'Ubuntu', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
   body,html{
     width: 100%;
@@ -14,7 +23,7 @@
     font-size: 16px;
   }
   body {
-    background-color: white;
+  
   }
   
   a {
@@ -28,6 +37,16 @@
   
   b{
     color: #ff0000;
+  }
+
+  .article{
+    font-size: 30px;
+  }
+
+  p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
   }
   
   .container {
@@ -107,7 +126,7 @@
   .background{
       height:100%;
       background-size: cover;
-      background-image: url(/images/smartphone-1184883_1920.png);
+      background-image: 
   }
 
   .article__header{
@@ -142,9 +161,68 @@
   }
 
  .three__articles{
-
+  display: flex;
+  justify-content: space-around;
  }
 
  .personaldev__container{
-
+  text-align: justify;
+  width: 400px;
+  border: solid 1px red;
+  background-color: rgba(127, 255, 212, 0.103);
  }
+
+ .it__container{
+   width: 400px;
+   border: solid 1px #45C7FF;
+   text-align: left;
+   background-color: rgba(137, 43, 226, 0.11);
+   text-align: justify;
+ }
+
+ .other__container{
+   text-align: justify;
+   width: 400px;
+   border: solid 1px #291B1B;
+   background-color: rgba(222, 184, 135, 0.151);
+ }
+ .footer__items{
+  display: flex;
+}
+
+.footer__content{
+  margin: 10px 65px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.footer__content h1{
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+.footer__content p{
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+
+.footer__content a{
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.foorm__button a{
+  background-color: #ff0000;
+  height: 53px;
+  width: 144px;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer__subscribe{
+  height: 43px;
+  width: 201px;
+}
