@@ -125,16 +125,30 @@ footer{
   width: 80%;
 }
 
-.lessons__list{
-
+.lessons__list-active{
+  color: rgb(78, 202, 240);
 }
 
 .name__cours{
-
+  margin-top: 20px;
 }
 
 .leson__description{
+  margin-top: 30px;
+}
 
+.leson__description p{
+  margin-top: 20px;
+}
+
+.leson__video{
+  margin-top: 30px;
+  width: 100%;
+}
+
+video{
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 
