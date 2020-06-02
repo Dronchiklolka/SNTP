@@ -19,7 +19,6 @@
   
   a {
     text-decoration: none;
-    color: #000;
   }
   
   img {
@@ -104,13 +103,68 @@
     color: #4F8FC0;
   }
 
+  .bakground__curs{
+    background-image: url(/images/bfd663ec8fcd825c9200ee5a3d6496b3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .name__cours{
+    margin-top: 20px;
+  }
+
+  .cours__review{
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  h2{
+      padding-bottom: 15px;
+  }
+
+  .button__buy{
+    background-color: rgb(209, 12, 52);
+    border: solid 1px #45C7FF;
+    color: #fff;
+    font-size: 15px;
+    width: 157px;
+    height: 53px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+  }
+
+  .cours__h2{
+
+  }
+
+  .lesson__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .lesson__items{
+    width: 300px;
+    border: solid 1px rgba(0, 0, 0, 0.205);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .lesson__items p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 
 
 
 
-
-  
   
   .footer__items{
     display: flex;
