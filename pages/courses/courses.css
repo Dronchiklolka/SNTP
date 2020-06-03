@@ -103,11 +103,10 @@
     color: #4F8FC0;
   }
 
-  .bakground__curs{
-    background-image: url(/images/bfd663ec8fcd825c9200ee5a3d6496b3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .bakground__curs {
     height: 500px;
+    border: 1px solid #ccc;
+    object-fit: contain;
   }
 
   .name__cours{
