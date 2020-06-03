@@ -8,32 +8,7 @@
     <title>MySQL-introduction</title>
 </head>
 <body>
-    <header>
-        <div class="header__section">
-            <div class="logo__content">
-                <a href="#" class="logo">SNTP</a>
-            </div>
-        <nav class="header__item">
-            <a href="/index.html" class="nav__link__first" onclick="SlowScroll('#main')">Главная</a>
-        </nav>
-        <nav class="header__item">  <a href="/index.html#first__curs" class="nav__link">Курсы</a>
-        </nav>
-        <nav class="header__item"> <a href="/pages/about-us/about_us.html" class="nav__link">О нас</a>
-        </nav>
-        <nav class="header__item">  <a href="/pages/articles/articles.html" class="nav__link">Статьи</a>
-            </nav>
-        <nav class="header__item"> <a href="/pages/help/help.html" class="nav__link">Справка</a>
-            </nav>
-    </div>
-        <div class="header__section">
-            <div class="header__item">
-            <a href="/pages/input/input.html" class="open">Войти</a>
-        </div>
-        <div class="header__item">
-            <a href="/pages/registration/registratin.html" class="link__registration">Зарегестрироваться</a>
-        </div>
-        </div>
-    </header>
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php"); ?>
     <section class="container">
         <div class="cours__content">
             <div class="cours__left">

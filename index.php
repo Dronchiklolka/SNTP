@@ -11,32 +11,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div class="header__section">
-                <div class="logo__content">
-                    <a href="#" class="logo">SNTP</a>
-                </div>
-            <nav class="header__item">
-                <a href="/index.html" class="nav__link__first" onclick="SlowScroll('#main')">Главная</a>
-            </nav>
-            <nav class="header__item">  <a href="#first__curs" class="nav__link">Курсы</a>
-            </nav>
-            <nav class="header__item"> <a href="/pages/about-us/about_us.html" class="nav__link">О нас</a>
-            </nav>
-            <nav class="header__item">  <a href="/pages/articles/articles.html" class="nav__link">Статьи</a>
-                </nav>
-            <nav class="header__item"> <a href="/pages/help/help.html" class="nav__link">Справка</a>
-                </nav>
-        </div>
-            <div class="header__section">
-                <div class="header__item">
-                <a href="/pages/input/input.html" class="open">Войти</a>
-            </div>
-            <div class="header__item">
-                <a href="/pages/registration/registratin.html" class="link__registration">Зарегестрироваться</a>
-            </div>
-            </div>
-        </header>
+    <?php
+        include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php");
+    ?>
         <main class="main-screen">
             <div class="background"></div>
             <div class="main-screen__greetings">
@@ -48,7 +25,7 @@
                  <p class="main-screen__items__items">Начните обучаться сейчас</p>
             </div>
             <div class="main-screen__footer">
-                <a href="/pages/registration/registratin.html" class="button main-screen__footer-button">Зарегистрироваться</a>
+                <a href="/pages/registration/registratin.php" class="button main-screen__footer-button">Зарегистрироваться</a>
                 <a href="#first__curs" class="button bg-blue">Наши курсы</a>
             </div>
         </main>
@@ -57,27 +34,27 @@
             <div class="courses">
                 <div class="section__course">
                     <img class="course__image" src="images/front.png" alt="Frontend">
-                    <a class="course__title" href="/pages/courses/Frontend.html">Frontend</a>
+                    <a class="course__title" href="/pages/courses/Frontend.php">Frontend</a>
                 </div>
                 <div class="section__course">
                     <img class="course__image" src="images/back.png" alt="Backend">
-                    <a class="course__title" href="/pages/courses/Backand.html">Backand</a>
+                    <a class="course__title" href="/pages/courses/Backand.php">Backand</a>
                 </div>
                 <div class="section__course">
                     <img class="course__image" src="images/react.png" alt="React.js">
-                    <a class="course__title" href="/pages/courses/React js.html">React.js</a>
+                    <a class="course__title" href="/pages/courses/React js.php">React.js</a>
                 </div>
                 <div class="section__course">
                     <img class="course__image" src="images/sql.png" alt="SQL">
-                    <a class="course__title" href="/pages/courses/SQL.html">SQL</a>
+                    <a class="course__title" href="/pages/courses/SQL.php">SQL</a>
                 </div>
                 <div class="section__course">
                     <img class="course__image" src="images/java.png" alt="JavaScript">
-                    <a class="course__title" href="/pages/courses/JavaScript.html">JavaScript</a>
+                    <a class="course__title" href="/pages/courses/JavaScript.php">JavaScript</a>
                 </div>
                 <div class="section__course">
                     <img class="course__image" src="images/MySQL.png" alt="MySQL">
-                    <a class="course__title" href="/pages/courses/MySQL.html">MySQL</a>
+                    <a class="course__title" href="/pages/courses/MySQL.php">MySQL</a>
                 </div>
             </div>
         </section>
@@ -180,17 +157,17 @@
                         <p> Образовательная <b>онлайн</b> платформа</p>
                     </div>
             <div class="footer__content">
-                <a href="/pages/about-us/about_us.html">Информация</a>
-                <a href="/pages/help/help.html">Сиртифекаты</a>
+                <a href="/pages/about-us/about_us.php">Информация</a>
+                <a href="/pages/help/help.php">Сиртифекаты</a>
                 <a href="#advertising">Реклама</a>
             </div>
             <div class="footer__content">
-                <a href="/pages/about-us/about_us.html">О нас</a>
-                <a href="/pages/help/help.html">Соглашения</a>
+                <a href="/pages/about-us/about_us.php">О нас</a>
+                <a href="/pages/help/help.php">Соглашения</a>
             </div>
             <div class="footer__content">
-                <a href="/pages/input/input.html">Войти</a>
-                <a href="/pages/registration/registratin.html">Регистрация</a>
+                <a href="/pages/input/input.php">Войти</a>
+                <a href="/pages/registration/registratin.php">Регистрация</a>
                 <a href="#advertising">Обратная связь</a>
             </div>
             <div class="footer__content">

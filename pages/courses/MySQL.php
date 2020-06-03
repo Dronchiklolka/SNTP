@@ -8,32 +8,7 @@
     <title>MySQL</title>
 </head>
 <body>
-    <header>
-        <div class="header__section">
-            <div class="logo__content">
-                <a href="#" class="logo">SNTP</a>
-            </div>
-        <nav class="header__item">
-            <a href="/index.html" class="nav__link__first" onclick="SlowScroll('#main')">Главная</a>
-        </nav>
-        <nav class="header__item">  <a href="/index.html#first__curs" class="nav__link">Курсы</a>
-        </nav>
-        <nav class="header__item"> <a href="/pages/about-us/about_us.html" class="nav__link">О нас</a>
-        </nav>
-        <nav class="header__item">  <a href="/pages/articles/articles.html" class="nav__link">Статьи</a>
-            </nav>
-        <nav class="header__item"> <a href="/pages/help/help.html" class="nav__link">Справка</a>
-            </nav>
-    </div>
-        <div class="header__section">
-            <div class="header__item">
-            <a href="/pages/input/input.html" class="open">Войти</a>
-        </div>
-        <div class="header__item">
-            <a href="/pages/registration/registratin.html" class="link__registration">Зарегестрироваться</a>
-        </div>
-        </div>
-    </header>
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php"); ?>
     <section class="container">
         <img src="/images/MySQL.png" class="bakground__curs">
         <div class="name__cours">
@@ -45,7 +20,7 @@
             <p>На курсе «MySQL 8. Проектирование и создание баз данных для web» вы овладеете основными приемами и методами эффективной работы с сервером MySQL 8. В ходе обучения вы рассмотрите этапы проектирования и создания баз данных, подробно изучите SQL-операторы, научитесь управлять транзакциями на сервере MySQL. Вы сможете создавать хранимые процедуры и триггеры, научитесь эффективно использовать хранилища («движки») сервера MySQL. Этот курс необходим любому разработчику сайтов.
             </p>
             <p>Стоимость курса 1800 рублей.</p>
-            <a href="introduction/MySQL-introduction.html" name="buу"><button class="button__buy">Приобрести курс</button></a>
+            <a href="introduction/MySQL-introduction.php" name="buу"><button class="button__buy">Приобрести курс</button></a>
         </div>
         <div class="cours__h2">
             <h2>Уроки</h2>

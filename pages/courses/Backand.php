@@ -8,32 +8,7 @@
     <title>Backand</title>
 </head>
 <body>
-    <header>
-        <div class="header__section">
-            <div class="logo__content">
-                <a href="#" class="logo">SNTP</a>
-            </div>
-        <nav class="header__item">
-            <a href="/index.html" class="nav__link__first" onclick="SlowScroll('#main')">Главная</a>
-        </nav>
-        <nav class="header__item">  <a href="/index.html#first__curs" class="nav__link">Курсы</a>
-        </nav>
-        <nav class="header__item"> <a href="/about-us/about_us.html" class="nav__link">О нас</a>
-        </nav>
-        <nav class="header__item">  <a href="/pages/articles/articles.html" class="nav__link">Статьи</a>
-            </nav>
-        <nav class="header__item"> <a href="/pages/help/help.html" class="nav__link">Справка</a>
-            </nav>
-    </div>
-        <div class="header__section">
-            <div class="header__item">
-            <a href="/pages/input/input.html" class="open">Войти</a>
-        </div>
-        <div class="header__item">
-            <a href="/pages/registration/registratin.html" class="link__registration">Зарегестрироваться</a>
-        </div>
-        </div>
-    </header>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php"); ?>
     <section class="container">
         <img src="/images/back.png" class="bakground__curs">
         <div class="name__cours">
@@ -44,7 +19,7 @@
             <h2>О курсе</h2>
             <p>Программа Back-end разработчик рассчитана на новичков, которые хотят изучить язык PHP, а также построение веб сайтов на стороне сервера. За время программы вы изучите язык PHP, научитесь работать с его библиотеками, создадите несколько веб сайтов, рассмотрите MVC, ООП, Cron, Curl, принципы и паттерны программирования и множество других терминов и понятий.</p>
             <p>Стоимость курса 2100 рублей.</p>
-            <a href="introduction/backand-introduction.html" name="buу"><button class="button__buy">Приобрести курс</button></a>
+            <a href="introduction/backand-introduction.php" name="buу"><button class="button__buy">Приобрести курс</button></a>
         </div>
         <div class="cours__h2">
             <h2>Уроки</h2>
