@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="/courses.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
 </head>
 <body>
-    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php"); ?>
+    <?php
+        include_once $_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php";
+        require_once $_SERVER['DOCUMENT_ROOT'] . "/helpers/mysqlDB.php";
+
+        $queryString = "SELECT * FROM courses WHERE id = $id";
+        $queryResult = mysqli_query($mysqlConnection, $queryString);
+
+        $course = mysqli_fetch_array($queryResult, MYSQLI_ASSOC);
+    ?>
     <section class="container">
-        <img src="../../images/front.png" class="bakground__curs">
+        <img src="/images/<?php echo($course['imgSrc']); ?>" class="bakground__curs">
         <div class="name__cours">
-            <h1>Frontend</h1>
+            <h1><?php echo($course['name']); ?></h1>
             <a href="#">Courses &#8212 &gt Frontend</a>
         </div>
         <div class="cours__review">
             <h2>О курсе</h2>
-            <p>Вы научитесь верстать веб-страницы, создавать веб-приложения, работать с JavaScript, в Photoshop и Figma. Закрепите навыки на офлайн-воркшопах, пополните портфолио и освоите востребованную профессию.</p>
-            <p>Стоимость курса 1200 рублей.</p>
-            <a href="../courses/introduction/Frontend-introduction.php" name="buу"><button class="button__buy">Приобрести курс</button></a>
+            <p> <?php echo($course['description']); ?></p>
+            <p><?php echo($course['price']); ?>.</p>
+            <a href="<?php echo "/lessons?courseId=$course[id]"?>" name="buу"><button class="button__buy">Приобрести курс</button></a>
         </div>
         <div class="cours__h2">
             <h2>Уроки</h2>
@@ -45,39 +53,6 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="footer__items">
-                <div class="footer__content">
-                    <h1>SNTP</h1>
-                    <p> Образовательная <b>онлайн</b> платформа</p>
-                </div>
-        <div class="footer__content">
-            <a href="#SNTP">Информация</a>
-            <a href="#">Сиртифекаты</a>
-            <a href="#">Реклама</a>
-        </div>
-        <div class="footer__content">
-            <a href="#">О нас</a>
-            <a href="#">Соглашения</a>
-        </div>
-        <div class="footer__content">
-            <a href="#">Войти</a>
-            <a href="#">Регистрация</a>
-            <a href="#">Обратная связь</a>
-        </div>
-        <div class="footer__content">
-            <p>Подпишитесь на рассылку и получите все уведомления от нашей платформы!</p>
-        <foorm>
-            <input type="email" id="email__footer" class="footer__subscribe" placeholder="E-mail">
-             <div class="foorm__button">
-                <a href="#">Подписаться</a>
-            </div>
-        </foorm>
-            <a href="#" class="mail__footer">Пишите сюда: <b>sntp.ru@gmail.com</b></a>
-        </div>
-        </div>
-        </div>
-    </footer>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/footer.php"); ?>
 </body>
 </html>

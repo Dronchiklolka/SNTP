@@ -1,4 +1,6 @@
-<?php session_start(); ?> <!DOCTYPE html>
+<?php session_start(); ?>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -30,30 +32,17 @@
         <section class="section section__courses container">
             <a href="#" class="section__title" name="first__curs">Курсы</a>
             <div class="courses">
-                <div class="section__course">
-                    <img class="course__image" src="images/front.png" alt="Frontend">
-                    <a class="course__title" href="/pages/courses/Frontend.php">Frontend</a>
-                </div>
-                <div class="section__course">
-                    <img class="course__image" src="images/back.png" alt="Backend">
-                    <a class="course__title" href="/pages/courses/Backand.php">Backand</a>
-                </div>
-                <div class="section__course">
-                    <img class="course__image" src="images/react.png" alt="React.js">
-                    <a class="course__title" href="/pages/courses/React js.php">React.js</a>
-                </div>
-                <div class="section__course">
-                    <img class="course__image" src="images/sql.png" alt="SQL">
-                    <a class="course__title" href="/pages/courses/SQL.php">SQL</a>
-                </div>
-                <div class="section__course">
-                    <img class="course__image" src="images/java.png" alt="JavaScript">
-                    <a class="course__title" href="/pages/courses/JavaScript.php">JavaScript</a>
-                </div>
-                <div class="section__course">
-                    <img class="course__image" src="images/MySQL.png" alt="MySQL">
-                    <a class="course__title" href="/pages/courses/MySQL.php">MySQL</a>
-                </div>
+                <?php   
+                    require_once $_SERVER['DOCUMENT_ROOT'] . "/helpers/mysqlDB.php";
+
+                    // получить курсы из бд
+                    $queryString = "SELECT * FROM courses";
+                    $queryResult = mysqli_query($mysqlConnection, $queryString);
+
+                    while ($courseRow = mysqli_fetch_array($queryResult, MYSQLI_ASSOC)) {
+                        echo '<div class="section__course"><img class="course__image" src="images/' . $courseRow["imgSrc"] . '" alt="Frontend"><a class="course__title" href="/courses?id=' . $courseRow["id"] . '">' . $courseRow["name"] . '</a></div>';
+                    }
+                ?>
             </div>
         </section>
             <section class="container">
@@ -147,39 +136,6 @@
             </div>
         </div>
         </section>
-        <footer>
-            <div class="container">
-                <div class="footer__items">
-                    <div class="footer__content">
-                        <h1>SNTP</h1>
-                        <p> Образовательная <b>онлайн</b> платформа</p>
-                    </div>
-            <div class="footer__content">
-                <a href="/pages/about-us/about_us.php">Информация</a>
-                <a href="/pages/help/help.php">Сиртифекаты</a>
-                <a href="#advertising">Реклама</a>
-            </div>
-            <div class="footer__content">
-                <a href="/pages/about-us/about_us.php">О нас</a>
-                <a href="/pages/help/help.php">Соглашения</a>
-            </div>
-            <div class="footer__content">
-                <a href="/pages/input/input.php">Войти</a>
-                <a href="/pages/registration/registratin.php">Регистрация</a>
-                <a href="#advertising">Обратная связь</a>
-            </div>
-            <div class="footer__content">
-                <p>Подпишитесь на рассылку и получите все уведомления от нашей платформы!</p>
-            <foorm>
-                <input type="email" id="email__footer" class="footer__subscribe" placeholder="E-mail">
-                 <div class="foorm__button">
-                    <a href="#">Подписаться</a>
-                </div>
-            </foorm>
-                <a name="advertising" href="#" class="mail__footer">Пишите сюда: <b>sntp.ru@gmail.com</b></a>
-            </div>
-            </div>
-            </div>
-        </footer>
+      <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/footer.php"); ?>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <nav class="header__item">
         <a href="/index.php" class="nav__link__first" onclick="SlowScroll('#main')">Главная</a>
     </nav>
-    <nav class="header__item">  <a href="#first__curs" class="nav__link">Курсы</a>
+    <nav class="header__item">  <a href="/index.php#first__curs" class="nav__link">Курсы</a>
     </nav>
     <nav class="header__item"> <a href="/pages/about-us/about_us.php" class="nav__link">О нас</a>
     </nav>

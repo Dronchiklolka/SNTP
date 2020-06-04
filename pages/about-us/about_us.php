@@ -53,39 +53,6 @@
             <p>Мы не понаслышке знаем, как важно саморазвитие и знания разных soft-skills навыков, которые помогут дальнейшему развитию в IT-сфере, поэтому в ближайшем времени мы запустим ещё один проект, которые поможет вам оставаться всегда на плаву и не выгорать.</p>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="footer__items">
-                <div class="footer__content">
-                    <h1>SNTP</h1>
-                    <p> Образовательная <b>онлайн</b> платформа</p>
-                </div>
-        <div class="footer__content">
-            <a href="#">Информация</a>
-            <a href="#">Сиртифекаты</a>
-            <a href="#">Реклама</a>
-        </div>
-        <div class="footer__content">
-            <a href="#">О нас</a>
-            <a href="#">Соглашения</a>
-        </div>
-        <div class="footer__content">
-            <a href="#">Войти</a>
-            <a href="#">Регистрация</a>
-            <a href="#">Обратная связь</a>
-        </div>
-        <div class="footer__content">
-            <p>Подпишитесь на рассылку и получите все уведомления от нашей платформы!</p>
-        <foorm>
-            <input type="email" id="email__footer" class="footer__subscribe" placeholder="E-mail">
-             <div class="foorm__button">
-                <a href="#">Подписаться</a>
-            </div>
-        </foorm>
-            <a href="#" class="mail__footer">Пишите сюда: <b>sntp.ru@gmail.com</b></a>
-        </div>
-        </div>
-        </div>
-    </footer>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/footer.php"); ?>
 </body>
 </html>
