@@ -1,5 +1,5 @@
 <?php
-    require_once '../helpers/connection.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/helpers/connection.php';
     $login = $_POST['login'];
     $password = $_POST['password'];
 
