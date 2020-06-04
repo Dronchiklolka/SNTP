@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php session_start(); ?> <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
-    <?php
-        include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php");
-    ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php"); ?>
         <main class="main-screen">
             <div class="background"></div>
             <div class="main-screen__greetings">

@@ -12,18 +12,18 @@
         <div class="overlay__content">
             <div class="modal">
                 <h2 class="modal__title">Регистрация</h2>
-                <div><form class="form">
+                <div><form action="<?php echo '/server/register.php'; ?>" method="POST" class="form">
                     <div class="form__input">
                         <label for="" class="form__label">Логин</label>
-                        <input class="form__field" type="text">
+                        <input class="form__field" name="login" type="text">
                     </div>
                     <div class="form__input">
                         <label for="" class="form__label">Пароль</label>
-                        <input class="form__field" type="text">
+                        <input class="form__field" name="password" type="text">
                         </div>
                         <div class="form__input">
                             <label for="" class="form__label">Почта</label>
-                            <input class="form__field" type="text">
+                            <input class="form__field" name="email" type="text">
                             </div>
                         <button class="form__button">Зарегистрироваться</button>
                     </form>
