@@ -4,9 +4,9 @@
 $config = array(
     'db'=> array(
         'server'=> 'localhost',
-        'username'=> 'root',
-        'password'=> 'root',
-        'name'=> 'sntp'
+        'username'=> 'dron69rus_sntp',
+        'password'=> 'Andrew1234',
+        'name'=> 'dron69rus_sntp'
     )
 )
 ?>
