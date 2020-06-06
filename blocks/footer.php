@@ -24,7 +24,7 @@
             <foorm>
                 <input type="email" id="email__footer" class="footer__subscribe" placeholder="E-mail">
                  <div class="foorm__button">
-                    <a href="#">Подписаться</a>
+                     <a href="#" id="email__get">Подписаться</a>
                 </div>
             </foorm>
                 <a name="advertising" href="#" class="mail__footer">Пишите сюда: <b>sntp.ru@gmail.com</b></a>

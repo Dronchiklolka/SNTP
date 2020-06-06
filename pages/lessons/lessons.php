@@ -10,30 +10,44 @@
 <body>
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php");
-    // сделать по аналогии с courses.php
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/helpers/mysqlDB.php";
+
+    // получаем все уроки текущего курса
+    $queryStringLessons = "SELECT * FROM lessons WHERE courseid = $id";
+    $queryResultLessons = mysqli_query($mysqlConnection, $queryStringLessons);
+
+    // получаем тукущий урок
+    $queryStringCurrentLesson = "SELECT * FROM lessons WHERE id = $lessonId";
+    $queryResultCurrentLesson = mysqli_query($mysqlConnection, $queryStringCurrentLesson);
+    $currentLesson = mysqli_fetch_array($queryResultCurrentLesson, MYSQLI_ASSOC);
 ?>
     <section class="container">
         <div class="cours__content">
             <div class="cours__left">
-                <a class="lessons__list lessons__list-active" href="#">PHP основы</a>
-                <br><br><br>
-                <a class="lessons__list" href="#">PHP Продвинутый</a>
-                <br><br><br>
-                <a class="lessons__list" href="#"> База данных MySQL</a>
+            <?php
+
+                // вывод всех уроков курса
+                while ($lessonRow = mysqli_fetch_array($queryResultLessons, MYSQLI_ASSOC)) {
+                    if ($lessonId == $lessonRow['id']) {
+                        echo "<a href=\"lessons?lessonId=$lessonRow[id]&id=$id\" class=\"lessons__list lessons__list-active\">$lessonRow[name]</a><br><br><br>";
+                    } else {
+                        echo "<a href=\"lessons?lessonId=$lessonRow[id]&id=$id\" class=\"lessons__list\">$lessonRow[name]</a><br><br><br>";
+                    }
+                }
+            ?>
             </div>
             <div class="cours__right">
                 <img src="/images/back.png" class="bakground__curs">
             <div class="name__cours">
-                <h1>Backand</h1>
-                <a href="#">Courses &#8212 &gt Backand  &#8212 &gt PHP основы</a>
+                <h1><?php echo($currentLesson['name']); ?></h1>
             </div>
             <div class="leson__description">
-                <h2>PHP основы</h2>
-                <p>За модуль вами будут изучены базовые моменты при работе с языком PHP. Вы научитесь встраивать PHP в HTML, научитесь создавать переменные, циклы, массивы, функции, а также ознакомитесь со множеством других понятий.</p>
+                <p><?php echo($currentLesson['description']); ?></p>
             </div>
             <div class="leson__video">
                 <h2>Видео</h2>
                 <video controls="controls">
+                    <source src="/images/<?php echo $currentLesson['videoURL'] ?>" type="video/mp4">
                 </video>
             </div>
         </div>

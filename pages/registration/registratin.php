@@ -19,11 +19,11 @@
                     </div>
                     <div class="form__input">
                         <label for="" class="form__label">Пароль</label>
-                        <input class="form__field" name="password" type="text">
+                        <input class="form__field" name="password" type="password">
                         </div>
                         <div class="form__input">
                             <label for="" class="form__label">Почта</label>
-                            <input class="form__field" name="email" type="text">
+                            <input class="form__field" name="email" type="email">
                             </div>
                         <button class="form__button">Зарегистрироваться</button>
                     </form>

@@ -19,7 +19,7 @@
                     </div>
                     <div class="form__input">
                             <label for="" class="form__label">Пароль</label>
-                        <input class="form__field" name="password" type="text">
+                        <input class="form__field" name="password" type="password">
                         </div>
                         <button class="form__button">Войти</button>
                     </form>

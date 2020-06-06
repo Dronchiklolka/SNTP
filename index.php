@@ -1,5 +1,4 @@
 <?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -25,7 +24,11 @@
                  <p class="main-screen__items__items">Начните обучаться сейчас</p>
             </div>
             <div class="main-screen__footer">
-                <a href="/pages/registration/registratin.php" class="button main-screen__footer-button">Зарегистрироваться</a>
+            <?php
+                // если залогинены не показывать кнопку зарегестрироваться
+                if (!isset($_SESSION['login'])) { ?>
+                    <a href="/pages/registration/registratin.php" class="button main-screen__footer-button">Зарегистрироваться</a>
+                <?php } ?>
                 <a href="#first__curs" class="button bg-blue">Наши курсы</a>
             </div>
         </main>

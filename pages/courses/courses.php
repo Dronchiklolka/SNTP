@@ -12,6 +12,14 @@
         include_once $_SERVER['DOCUMENT_ROOT'] . "/blocks/header.php";
         require_once $_SERVER['DOCUMENT_ROOT'] . "/helpers/mysqlDB.php";
 
+        // получаем все уроки текущего курса
+        $queryStringLessons = "SELECT * FROM lessons WHERE courseid = $id";
+        $queryResultLessons = mysqli_query($mysqlConnection, $queryStringLessons);
+        
+        // получаем первый урок текущего курса
+        $queryResultFirstLesson = mysqli_query($mysqlConnection, $queryStringLessons);
+        $firstLesson = mysqli_fetch_array($queryResultFirstLesson, MYSQLI_ASSOC);
+
         $queryString = "SELECT * FROM courses WHERE id = $id";
         $queryResult = mysqli_query($mysqlConnection, $queryString);
 
@@ -27,30 +35,18 @@
             <h2>О курсе</h2>
             <p> <?php echo($course['description']); ?></p>
             <p><?php echo($course['price']); ?>.</p>
-            <a href="<?php echo "/lessons?courseId=$course[id]"?>" name="buу"><button class="button__buy">Приобрести курс</button></a>
+            <a href="<?php echo "/lessons?lessonId=$firstLesson[id]&id=$course[id]"?>" name="buу"><button class="button__buy">Приобрести курс</button></a>
         </div>
         <div class="cours__h2">
             <h2>Уроки</h2>
         </div>
         <div class="lesson__list">
-            <div class="lesson__items">
-                <h3>1. Основные понятия</h3>
-                <p>Фронтенд, это совокупность знаний, которое поможет вам в вёрстке сайтов и веб-приложений. Поймёте базовый синтаксис HTML и CSS. Вы научитесь управлять цветом и шрифтами, размещать блоки на странице. Всё это — через практику. Вы напишете программу на языке JavaScript и сделаете страницу интерактивной.</p>
-            </div>
-            <div class="lesson__items">
-                <h3>2. Расширенные возможности HTML и CSS</h3>
-                <p>В этом курсе вы расширите знания о семантике HTML-разметки, необходимых CSS-технологиях: flexbox, позиционирование элементов, работа с медиафайлами и виджетами, создание анимаций, работа с формами. Изучите методологию БЭМ — самый популярный в мире подход к организации кода.
-                    Современному сайту необходимо окружение из вспомогательного программного обеспечения. В этом курсе вы подключите к проекту систему контроля версий Git и научитесь работать в командной строке.</p>
-            </div>
-            <div class="lesson__items">
-                <h3>3. HTML и CSS. Работа с макетом, построение сложных сеток, адаптивная вёрстка</h3>
-                <p>На этом курсе вы узнаете, какие виды дизайн-макетов используют в работе профессионалы и как готовить макет к вёрстке. Научитесь выстраивать модульные сетки и группировать элементы технологией Grid Layout. Разберётесь, как создавать интерфейсы для разных устройств: настольных компьютеров, ноутбуков, планшетов, смартфонов.
-                <p>В этом курсе вы продолжите развивать инфраструктуру проекта: освоите инструменты коллективной работы, разместите сайт в интернете и научитесь публиковать изменения в нём из командной строки.</p>
-            </div>
-            <div class="lesson__items">
-                <h3>4. Выпускной проект</h3>
-                <p>Итоговый выпускной проект, подтверждающий знания и умения. Во время работы над ним не нужно выполнять домашние задания и узнавать новую теорию из тренажёра — здесь всё, как в реальной жизни: задание, сроки, приобретённые навыки и поисковик.</p>
-            </div>
+        <?php
+            // вывод уроков
+            while ($lessonRow = mysqli_fetch_array($queryResultLessons, MYSQLI_ASSOC)) {
+                echo "<div class='lesson__items'><h3>$lessonRow[name]</h3><p>$lessonRow[description]</p></div>";
+            }
+        ?>
         </div>
     </section>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/blocks/footer.php"); ?>
